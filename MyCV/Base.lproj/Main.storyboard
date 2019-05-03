@@ -13,7 +13,7 @@
         <scene sceneID="iZB-R6-UiT">
             <objects>
                 <tableViewController id="Sju-oE-rtU" customClass="TableViewController" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D6z-f8-Sfp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D6z-f8-Sfp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,19 +64,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPk-hZ-bd4">
-                                                    <rect key="frame" x="309" y="245" width="85" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="CMd-Z6-hnR"/>
-                                                        <constraint firstAttribute="width" constant="85" id="S0A-hb-Xur"/>
-                                                    </constraints>
-                                                    <state key="normal" image="github.png"/>
-                                                    <connections>
-                                                        <action selector="gitHubButtonClicked:" destination="Sju-oE-rtU" eventType="touchUpInside" id="3kn-eA-Jax"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwA-vp-LJ6">
-                                                    <rect key="frame" x="309" y="191" width="85" height="24"/>
+                                                    <rect key="frame" x="309" y="188" width="85" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="BwG-td-rUq"/>
                                                         <constraint firstAttribute="width" constant="85" id="EFr-vl-deE"/>
@@ -86,6 +75,17 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="linkedInButtonClicked:" destination="Sju-oE-rtU" eventType="touchUpInside" id="wPa-Zy-XeT"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPk-hZ-bd4">
+                                                    <rect key="frame" x="309" y="245" width="85" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="CMd-Z6-hnR"/>
+                                                        <constraint firstAttribute="width" constant="85" id="S0A-hb-Xur"/>
+                                                    </constraints>
+                                                    <state key="normal" image="github.png"/>
+                                                    <connections>
+                                                        <action selector="gitHubButtonClicked:" destination="Sju-oE-rtU" eventType="touchUpInside" id="3kn-eA-Jax"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -100,7 +100,7 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="htM-sX-qzD" secondAttribute="trailing" constant="20" symbolic="YES" id="STb-wx-c9w"/>
                                                 <constraint firstItem="Ezr-Vl-CMT" firstAttribute="top" secondItem="AuO-DV-OhS" secondAttribute="bottom" constant="8" id="XSJ-E2-LN5"/>
                                                 <constraint firstItem="F17-pV-eGb" firstAttribute="top" secondItem="htM-sX-qzD" secondAttribute="bottom" constant="8" id="YMZ-aZ-0Ct"/>
-                                                <constraint firstItem="nPk-hZ-bd4" firstAttribute="top" secondItem="UwA-vp-LJ6" secondAttribute="bottom" constant="30" id="ZBT-WM-GOl"/>
+                                                <constraint firstItem="nPk-hZ-bd4" firstAttribute="top" secondItem="UwA-vp-LJ6" secondAttribute="bottom" constant="33" id="ZBT-WM-GOl"/>
                                                 <constraint firstAttribute="trailing" secondItem="UwA-vp-LJ6" secondAttribute="trailing" constant="20" id="ahW-cf-cHT"/>
                                                 <constraint firstItem="htM-sX-qzD" firstAttribute="leading" secondItem="2rD-lz-VFQ" secondAttribute="leading" constant="20" id="dgm-fL-Ae3"/>
                                                 <constraint firstItem="6iQ-RM-3ZX" firstAttribute="trailing" secondItem="2rD-lz-VFQ" secondAttribute="trailingMargin" id="iTq-DG-RqZ"/>
@@ -226,7 +226,7 @@ Tools Summary: XCode, Objective-C, Swift, MVC,  Firebase, UIMapKit, RevealViewCo
                                         <rect key="frame" x="0.0" y="1000" width="414" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGT-CI-cFm" id="Qwt-aM-Zpo">
-                                            <rect key="frame" x="0.0" y="0.0" width="896" height="319.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="319.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z9-YB-70l">
